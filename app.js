@@ -24,7 +24,7 @@ button.addEventListener('click', () => {
     // generate a random correct answer: heads or tails
     
     
-    // Math.random(Math.random() * 3);
+    Math.random(Math.random() * 3.3333);
 
     // we need to compar the user guess to the correct answer
     totalGuesses.textContent = "total: " + totalGuesses;
