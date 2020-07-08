@@ -15,27 +15,31 @@
 <body>
     <header>
         <div class="gutter-right logo">
-            <img src="assets/big-logo.png"/>
+            <!-- <img src="https://media0.giphy.com/media/jqI3buvbN3EitBjHfB/giphy.gif"/> -->
         </div>
     </header>
     <main>
         <section class="main-section">
-          <lable>
+            <!-- stretch goal maybe? have this revealed for RESET BUTTON ? OR have as an image placement for the computer playing?  -->
+            <label>
+                <img height="235" name="computer-player-placement" src="https://media0.giphy.com/media/jqI3buvbN3EitBjHfB/giphy.gif" />
+            </label>
+            <lable>
               ROCK 
               <input type="radio" name="option" value="rock" /></lable>
               <img height="100" src="https://thumbs.gfycat.com/PastelForkedIguanodon-small.gif" />
               <!-- input image as button here -->
-          <lable>
+            <lable>
               PAPER
               <input type="radio" name="option" value="paper" /></lable>
               <!-- input image as button here -->
-          <lable>
+            <lable>
               SCISSORS
               <input type="radio" name="option" value="scissors" /></lable>
                 <!-- input image as button here -->
             <button id="guess-button">Guess</button>
         </section>
-        <section>
+        <section class ="tally-section">
             <div id="displayed-results">
                 <span id="num-of-games">Games Played: </span>
                 <span id="num-of-ties">Ties: </span>
@@ -45,7 +49,7 @@
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+        
     </footer>
 
     <script type="module" src="app.js"></script>
