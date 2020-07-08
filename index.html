@@ -22,19 +22,20 @@
         <section class="main-section">
             <!-- stretch goal maybe? have this revealed for RESET BUTTON ? OR have as an image placement for the computer playing?  -->
             <section class="sub-rules">
-                <ol><bold>How To Play:</bold></ol>
-                <li>Rock beats Scissors</li>
-                <li>Scissors beats Paper</li>
-                <li>Paper beats Rock</li>
-                <li>Make your choice then click the submit button</li>
-
+                <ol>
+                    <strong>How To Play:</strong>
+                    <li>Rock beats Scissors</li>
+                    <li>Scissors beats Paper</li>
+                    <li>Paper beats Rock</li>
+                    <li>Make your choice then click the submit button</li>
+                </ol>
             </section>
             <label>
                 <img height="250" name="computer-player-placement" src="https://media0.giphy.com/media/jqI3buvbN3EitBjHfB/giphy.gif" />
             </label>
             <lable>
               ROCK 
-              <input type="radio" name="option" value="rock" /></lable>
+              <input type="radio" name="option" value="rock" checked/></lable>
               <img height="100" src="https://thumbs.gfycat.com/PastelForkedIguanodon-small.gif" />
               <!-- input image as button here -->
             <lable>
@@ -50,12 +51,10 @@
             <button id="guess-button">Guess</button>
         </section>
         <section class ="tally-section">
-            <div id="displayed-results">
-                <span id="num-of-games">Games Played: </span>
-                <span id="num-of-ties">Ties: </span>
-                <span id="num-of-wins">Wins: </span>
-                <span id="num-of-losses">Losses: </span>
-            </div>
+            <div id="num-of-games">Games Played: </div>
+            <div id="num-of-ties">Ties: </div>
+            <div id="num-of-wins">Wins: </div>
+            <div id="num-of-losses">Losses: </div>
         </section>
     </main>
     <footer>

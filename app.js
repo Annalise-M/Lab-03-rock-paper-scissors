@@ -1,7 +1,10 @@
-// import functions and grab DOM elements
+{/* <div id="num-of-games">Games Played: </div>
+<div id="num-of-ties">Ties: </div>
+<div id="num-of-wins">Wins: </div>
+<div id="num-of-losses">Losses: </div> */}
+
 
 const button = document.querySelector('#guess-button');
-
 const results = document.querySelector('#displayed-results');
 
 // initialize state
@@ -10,7 +13,6 @@ let totalGuesses = 0;
 
 // set event listeners to update state and DOM
 button.addEventListener('click', () => {
-    
     totalGuesses++;
 
     const checkedRadio = document.querySelector('input:checked');
@@ -27,8 +29,8 @@ button.addEventListener('click', () => {
     Math.random(Math.random() * 3.3333);
 
     // we need to compar the user guess to the correct answer
-    totalGuesses.textContent = "total: " + totalGuesses;
-    wins.textContent = "total: " + totalGuesses;
-    losses.textContent = "total: " + totalGuesses;
-    current.textContent = "total: " + lossesData;
+    // totalGuesses.textContent = 'total: ' + totalGuesses;
+    // wins.textContent = 'total: ' + totalGuesses;
+    // losses.textContent = 'total: ' + lossesData;
+    // current.textContent = 'total: ' + currentData;
 });
