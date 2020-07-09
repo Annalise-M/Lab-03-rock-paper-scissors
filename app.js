@@ -2,8 +2,8 @@ import { getRandomThrow } from './get-random-throw.js';
 import { checkResults } from './get-random-throw.js';
 
 const guessButton = document.querySelector('#guess-button');
-// const resetButton = document.querySelector('#reset-button');
-//const radio = document.querySelector('input:checked');
+const resetButton = document.querySelector('#reset-button');
+// const radio = document.querySelector('input:checked');
 const numOfGames = document.querySelector('#num-of-games');
 const numOfTies = document.querySelector('#num-of-ties');
 const numOfWins = document.querySelector('#num-of-wins');
@@ -43,20 +43,20 @@ guessButton.addEventListener('click', () => {
     // console.log(gamesLost, 'games lost');
     // console.log(totalGuesses, 'total guesses');
 
-    numOfWins.textContent = `gamesWon=${gamesWon}`;
-    numOfTies.textContent = `gameTies=${gameTies}`;
-    numOfLosses.textContent = `gamesLost=${gamesLost}`;
-    numOfGames.textContent = `totalGuesses=${totalGuesses}`;
+    numOfWins.textContent = `Wins: ${gamesWon}`;
+    numOfTies.textContent = `Ties: ${gameTies}`;
+    numOfLosses.textContent = `Losses: ${gamesLost}`;
+    numOfGames.textContent = `Games Played: ${totalGuesses}`;
 });
 
-// resetButton.addEventListener('click', () => {
-//     totalGuesses = 0;
-//     gamesWon = 0;
-//     gameTies = 0;
-//     gamesLost = 0;
-    
-//     numOfWins.textContent = gamesWon;
-//     numOfTies.textContent = numOfTies;
-//     numOfLosses.textContent = numOfLosses;
-//     numOfGames.textContent = totalGuesses;
-// });
+resetButton.addEventListener('click', () => {
+    totalGuesses = 0;
+    gamesWon = 0;
+    gameTies = 0;
+    gamesLost = 0;
+        
+    numOfWins.textContent = `Wins: ${gamesWon}`;
+    numOfTies.textContent = `Ties: ${gameTies}`;
+    numOfLosses.textContent = `Losses: ${gamesLost}`;
+    numOfGames.textContent = `Games Played: ${totalGuesses}`;
+});
