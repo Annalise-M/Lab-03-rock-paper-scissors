@@ -120,16 +120,19 @@ footer {
 
   .input {
       display: none;
+  } 
+
+  /* input[type="radio"] {
+    opacity: 0;
   } */
 
-  input:checked + img {
-      border: solid 5px salmon;
+  input:checked + image {
+      border: solid 15px salmon;
   }
 
   .tally-section {
       align-items: center;
       margin: 50px;
   }
-
 
   /* look into toggle as well */

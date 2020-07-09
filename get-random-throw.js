@@ -1,5 +1,5 @@
 export function getRandomThrow() {
-    let getRandomThrow = Math.ceil(Math.random() * 3);
+    let getRandomThrow = Math.ceil(Math.random() * 3.3333);
     if (getRandomThrow === 1) {
         return 'rock';
     } else if (getRandomThrow === 2) {
@@ -16,13 +16,13 @@ export function checkResults(userThrow, computerThrow) {
     else if (userThrow === 'rock' && computerThrow === 'paper') {
         return 'LOSE';
     } else if (userThrow === 'rock' && computerThrow === 'scissors') {
-        return 'YOU WIN!';
+        return 'WIN!';
     } else if (userThrow === 'paper' && computerThrow === 'rock') {
-        return 'YOU WIN!';
+        return 'WIN!';
     } else if (userThrow === 'paper' && computerThrow === 'scissors') {
         return 'LOSE';
     } else if (userThrow === 'scissors' && computerThrow === 'paper') {
-        return 'YOU WIN!';
+        return 'WIN!';
     } else if (userThrow === 'scissors' && computerThrow === 'rock') {
         return 'LOSE';
     }
