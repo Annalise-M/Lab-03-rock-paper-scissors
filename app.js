@@ -2,8 +2,7 @@ import { getRandomThrow } from './get-random-throw.js';
 import { checkResults } from './get-random-throw.js';
 
 const guessButton = document.querySelector('#guess-button');
-
-
+// const resetButton = document.querySelector('#reset-button');
 //const radio = document.querySelector('input:checked');
 const numOfGames = document.querySelector('#num-of-games');
 const numOfTies = document.querySelector('#num-of-ties');
@@ -48,18 +47,16 @@ guessButton.addEventListener('click', () => {
     numOfTies.textContent = `gameTies=${gameTies}`;
     numOfLosses.textContent = `gamesLost=${gamesLost}`;
     numOfGames.textContent = `totalGuesses=${totalGuesses}`;
-
-        
 });
 
-
-    // generate a random correct answer: heads or tails
+// resetButton.addEventListener('click', () => {
+//     totalGuesses = 0;
+//     gamesWon = 0;
+//     gameTies = 0;
+//     gamesLost = 0;
     
-    
-    // Math.random(Math.random() * 3.3333);
-
-    // we need to compar the user guess to the correct answer
-    // totalGuesses.textContent = 'total: ' + totalGuesses;
-    // wins.textContent = 'total: ' + totalGuesses;
-    // losses.textContent = 'total: ' + lossesData;
-    // current.textContent = 'total: ' + currentData;
+//     numOfWins.textContent = gamesWon;
+//     numOfTies.textContent = numOfTies;
+//     numOfLosses.textContent = numOfLosses;
+//     numOfGames.textContent = totalGuesses;
+// });
