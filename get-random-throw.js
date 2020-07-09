@@ -9,7 +9,7 @@ export function getRandomThrow() {
     }
 }
 
-export function compareResult(userThrow, computerThrow) {
+export function checkResults(userThrow, computerThrow) {
     if (userThrow === computerThrow) {
         return 'DRAW';
     } 
