@@ -101,8 +101,8 @@ footer {
 
   .tally-section {
       display: flex;
-      flex-direction: row;
-      
+      flex-direction: column;
+      justify-content: center;
       margin: 50px;
   }
 
